@@ -1,0 +1,17 @@
+.notidot{
+  background-color: tomato;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  position: absolute;
+  left: 30px;
+  bottom: 25px;
+}
+.notidotnear{
+  left: 20px;
+  bottom: 20px;
+}
+.notidotmiddle{
+  left: 35px;
+  bottom: 35px;
+}

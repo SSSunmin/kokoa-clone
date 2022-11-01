@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>More - Kokoa Clone</title>
+</head>
+<body>
+  <div class="status-bar">
+    <div class="status-bar__column">
+      <span>No Service</span>
+      <i class="fa-solid fa-wifi"></i>
+    </div>
+    <div class="status-bar__column">
+      <span>18:43</span>
+    </div>
+    <div class="status-bar__column">
+      <span>100%</span>
+      <i class="fa-solid fa-battery-full fa-lg"></i>
+      <i class="fa-solid fa-bolt"></i>
+    </div>
+  </div>
+
+  <header class="screen-header">
+    <h1 class="screen-header__title">More</h1>
+    <div class="screen-header__icons">
+        <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+        <span><i class="fa-solid fa-music  fa-lg"></i></span>
+        <span>
+          <div class="notidot notidotnear"></div>       
+          <a href="settings.html"><i class="fa-solid fa-gear fa-lg"></i></a>
+        </span>
+    </div>
+  </header>
+
+  <main class="main-screen">
+    <div class="user-component">
+      <div class="user-component__column">
+        <img class="user-component__avatar user-component__avatar" src="userimg.jpg"/>
+        <div class="user-component__text">
+          <h4 class="user-component__title">Sunmin</h4>
+          <h6 class="user-component__subtitle">+82 010-4697-7956  
+            <i class="fa-solid fa-circle-exclamation red-icon"></i>
+          </h6>    
+        </div>
+      </div>
+      <div class="user-component__column">
+        <i class="fa-solid fa-message fa-2x"></i>
+      </div>
+    </div>  
+
+    <div class="more-icons">
+      <div class="more-icons-column more-icons-column-up">
+        <div class="icon-row__icon">
+          <i class="fa-regular fa-calendar-check"></i>
+          <span>Calender</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fa-solid fa-inbox dot">
+            <div class="notidot notidotmiddle"></div>
+          </i>
+          <span>Talk Drive</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fa-regular fa-face-smile"></i>
+          <span>Emoticons</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fa-solid fa-brush"></i>
+          <span>Themes</span>
+        </div>
+      </div>
+      <div class="more-icons-column more-icons-column-down">
+        <div class="icon-row__icon">
+          <i class="fa-regular fa-circle-user"></i>
+          <span>Account</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fa-regular fa-comments"></i>
+          <span>Openchat</span>
+        </div>
+      </div>
+    </div>
+    <div class="more-suggest">
+      <h4 class="more-suggest__title">Suggestions</h4>    
+      <div class="more-suggest__icons">
+        <div class="more-suggest__icons_icon">
+          <img src="https://blog.kakaocdn.net/dn/CNqfY/btqzjsct2YY/PfKa0QqNmiKdUticLxuAaK/img.png">
+          <span>Kokoa Story</span>
+        </div>
+        <div class="more-suggest__icons_icon">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAdVBMVEX/2QD/////1wD//vj//fL/1QD///3/5nr/99f//fT/2gD/99n/9tH/+uX/++r/7J7/8bj/+eD/3C3/3j7/8LH/2xr/6Y3/9Mj/7qf/3jz/5Gz/88L/53//6IX/4FT/4E7/4mP/65b/763/6pL/42r/4Vv/5HPGY1/NAAAEi0lEQVR4nO2X25KrOAxFbXHJhQQIhNwDSXfC/3/i8ZYNpKdmpmrqMFXnYa+HABYIbUuWiTGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhJDfQ0TCMVyf23801Z1Mz5nuXcl0rbeLf0Sm0+FpkR/mv7EMXtbtuzKffn+Td2pLuKtXttcXXK1NKzUtrC1gettURcvO2nyI45BbcKwGR3VxKo+OsjJdFsMWlzDerH0a0x03m12e5/HVmN7aPfwerF0Y3Jzi5utDxR/0UbtdzCVQNs4dTtxbVuJlWbvRlzkNqTs5u4HMHaWAaS/jY56Q8WYc2CfxeF4bieFY8nGow4i9i/rPBdMWuLqxcryaK4uyVIWyRT7Ey9LIjMYWuaGVu/4SPwlhOuQ5BmIj7+gyDhwEo3keucNOxB1ikdEaG6PHRt8ZiawmV0/BbNocMeSzKhSUJt5tTIvorBZumP2dBmq03NIIYTgToi+MvHG8q6Me89C1bXuWNfKRSKLlgVtdtKiDJCw368sEniOdgTyRCslLkxtmyN3Xflf/FvV/VpicoKsxfhVuv32moDBOjjYsPgR0LH0td1CduLG7Ly7jq/vgFax9PQi8VpIOCpdJ6Cc+YYtkUuhGEyTuDC+bd2Nkvk6jCi+DQH17gSX17RWqWt9dakT1dj8vL0cX5LBG/VB56fveL8nNue4jzaH72arC1cZR+glAwuSHQl2BlzrU6+42m0QoTLOwvLS92QqT614KhbsVVpHeuNdyjrQNIXUnDDc+/qBQ2crUdFwqJ4Wem0+xy2y5+aEQGb9PHexrznWYlkNK0GdW9zsqs/MK8cZvNbmYtvd7pk1iMYRQDYt0Urj6ULg05q8KO1W4xxylPxTuVb4UQ+eZSWDopTZI7KbZvwoU5pCgEheTqZCHDTvKwy+5oDDPsmy3+Ng4mk+FWVXXdeOrtEy2esOHQnS0Fvt/092g8j2nwqQNmqbdCCsIvVS7m6tIvW/Mkk7J2/UNpPRpBoXoguJL9yp4MPYKPzuN76VHvy9gH/G9VHsW8ta4W7QLz6bQt3TVkSGa+Lsonlqb6G5ut8D6sCUmfvt0Jmh6CerY7pboJXatjrBbFN7nWjOsnof9EKqipUtxtuyMN+v3w87vh/Eu9XPsSibKsu3kdiaFayPomfYVilUneIlPE/dNowvE6kYFE/pu+dlMbt7RxYbm49O2dKfQv4BCV4vpeH8ZzFqWx88d32X8Pl7sZ2umT98skcUcs1sNuk+o2WX4Wts4zakPP9c9vgofW6tLiASaL9Os7cPn3hk7rNOxH0O/o+A12zG+S0dL9OWGzlG4mq2VunDa3h8b7GSL4VPi9Xaz/H5509mZqkUTTL3+wZDqdjod2imQpq/H85d+RZt1j2ceuJAq0ATn4NKqpX70/eMc/mh0t+JU9HP+t/gd/qcw/hB1hBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYSQP5xfipcwgAf6qfoAAAAASUVORK5CYII=">
+          <span>kokoa friends</span>
+        </div>
+        <div class="more-suggest__icons_icon">
+          <img src="https://img.tapimg.net/market/icons/50f822a04ef8e4414e97f38367c95ca7_360.png?imageMogr2/auto-orient/strip">
+          <span>friends Gem</span>
+        </div>
+      </div> 
+
+    </div>
+
+  </main>
+
+  
+  
+  <nav class="nav">
+    <ul class="nav__list">
+        <li class="nav__btn">
+            <a class="nav__link" href="friends.html">
+              <i class="fa-regular fa-user fa-2x"></i>
+            </a>
+        </li>
+        <li class="nav__btn">
+            <a class="nav__link"  href="chats.html">
+                <span class="nav_notification badge">1</span>
+                <i class="fa-regular fa-comment fa-2x"></i>
+            </a>
+        </li>
+        <li class="nav__btn">
+            <a class="nav__link"  href="find.html">
+                <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+            </a>
+        </li>
+        <li class="nav__btn">
+            <a class="nav__link"  href="more.html">
+                <div class="notidot"></div>
+                <i class="fa-solid fa-ellipsis fa-2x"></i>
+            </a>
+        </li>
+    </ul>
+  </nav>
+  
+  <div id="no-mobile">
+    <span>Your screen is too big ㅠㅠ</span>
+  </div>
+
+
+  <script src="https://kit.fontawesome.com/53b31b1e80.js" crossorigin="anonymous"></script>
+</body>
+</html>
